@@ -11,9 +11,10 @@ $(document).ready(function() {
     function movePlayer(dx, dy) {
         var newX = playerX + dx;
         var newY = playerY + dy;
-      
-        if (newX == 380 && newY == 360) {
-          wallCoordinates
+
+        if (playerX === 380 && playerY === 320) {
+          $('#maze').append('<div class="wall" style="top: 360px; left: 380px;"></div>');
+          console.log(1)
         }
         //Verify new position is inside of the maze walls
         if (newX >= 0 && newX < mazeWidth && newY >= 0 && newY < mazeHeight) {
@@ -230,7 +231,22 @@ $(document).ready(function() {
         {top: 340, left: 360},
         {top: 360, left: 360},
         {top: 360, left: 340},
-        {top: 380, left: 360},
+        {top: 200, left: 320},
+        {top: 180, left: 320},
+        {top: 200, left: 360},
+        {top: 220, left: 360},
+        {top: 240, left: 360},
+        {top: 240, left: 320},
+        {top: 240, left: 340},
+        {top: 240, left: 340},
+        {top: 260, left: 340},
+        {top: 280, left: 340},
+        {top: 280, left: 360},
+        {top: 280, left: 300},
+        {top: 280, left: 280},
+        {top: 280, left: 260},
+        {top: 280, left: 320},
+        {top: 300, left: 320},
     ]
 
     for (var i = 0; i < wallCoordinates.length; i++) {
@@ -239,5 +255,4 @@ $(document).ready(function() {
 
     //Create the player and append it to the board
     $('#maze').append('<div class="player" id="player" style="top: '+ playerY + 'px; left: ' + playerX + 'px;"> <img src="./assets/Idle (1).png" style="max-height:20px; max-width:20px;"></div>')
-
 })
