@@ -25,7 +25,7 @@ html {
 .wall, #start, #end {
     width: 20px;
     height: 20px;
-    background-color: black;
+    background-color: darkred;
     position: absolute;
 }
 
@@ -60,8 +60,9 @@ html {
 .player {
     width: 20px;
     height: 20px;
-    background-color: blue;
+    background-color: lightgreen;
     position: absolute;
+    border-radius: 5px;
 }
 #title {
     -webkit-text-stroke-width: 4.7px;
@@ -71,6 +72,10 @@ html {
     color:black;
     font-family: myFont;
     animation: animate  3s linear infinite; 
+}
+#rules {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;  
 }
 @keyframes animate { 
     0% { 
@@ -86,4 +91,15 @@ html {
     } 
 } 
 
-
+#one {
+    color: $tertiary-color;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; 
+}
+#countUp {
+    color: $tertiary-color;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html {
+    overflow: hidden;
+}

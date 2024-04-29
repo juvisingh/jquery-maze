@@ -23,7 +23,7 @@ html {
 .wall, #start, #end {
   width: 20px;
   height: 20px;
-  background-color: black;
+  background-color: darkred;
   position: absolute;
 }
 
@@ -57,8 +57,9 @@ html {
 .player {
   width: 20px;
   height: 20px;
-  background-color: blue;
+  background-color: lightgreen;
   position: absolute;
+  border-radius: 5px;
 }
 
 #title {
@@ -72,6 +73,11 @@ html {
   animation: animate 3s linear infinite;
 }
 
+#rules {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
 @keyframes animate {
   0% {
     opacity: 0;
@@ -82,4 +88,18 @@ html {
   100% {
     opacity: 0;
   }
+}
+#one {
+  color: #f8c7cc;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+#countUp {
+  color: #f8c7cc;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html {
+  overflow: hidden;
 }/*# sourceMappingURL=styles.css.map */
