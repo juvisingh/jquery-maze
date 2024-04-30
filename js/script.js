@@ -271,11 +271,12 @@ $(document).ready(function() {
     document.getElementById('countUp').innerHTML = finalTime;
   }
   var timer = setInterval(getTime,1000)
-  // function restart() {
-  //   seconds = 0;
-  //   minutes = 0;
-  //   playerX = 0;
-  //   playerY = 0;
-  //   movePlayer(0,0)
-  //   console.log(playerY)
-  // }
+  function restart() {
+    // alert("hi")
+    seconds = 0;
+    minutes = 0;
+    playerX = 0;
+    playerY = 0;
+    movePlayer(20, 0);
+    console.log(playerY)
+  }
